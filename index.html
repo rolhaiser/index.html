@@ -27,19 +27,6 @@
       font-size: 18px;
       color: #555;
     }
-    a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background-color: rgb(85,107,47); /* tu color exacto */
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    a:hover {
-      background-color: #6b8e23; /* tono más claro al pasar el mouse */
-    }
     img {
       border-radius: 10px;
       margin-bottom: 20px;
@@ -49,6 +36,40 @@
       font-size: 14px;
       color: #888;
     }
+
+    /* Botón de descarga */
+    .boton {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #556B2F; /* verde oliva */
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin: 10px;
+    }
+    .boton:hover {
+      background-color: #6B8E23;
+    }
+
+    /* Botón de navegación */
+    .boton-navegar {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #1e1e1e; /* gris oscuro */
+      color: #f4f4f9;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 2px solid #556B2F; /* borde verde oliva */
+      transition: background 0.3s, color 0.3s;
+      margin: 10px;
+    }
+    .boton-navegar:hover {
+      background-color: #556B2F;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -56,28 +77,21 @@
     <img src="imagenes/autor.png" alt="Foto de Ivo" width="300">
     <h1>Hola, soy Ivo</h1>
     <p>Bienvenido a mi página.</p>
-    <a href="documentos/comandospython.pdf" target="_blank">Descargar hoja de comandos de Python</a>
-<a href="programacion/" class="boton">Ir a Programación</a>
 
-<style>
-  .boton {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #556B2F; /* tu verde oliva */
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  .boton:hover {
-    background-color: #6B8E23; /* un verde más claro al pasar el mouse */
-  }
-</style>
-    
+    <!-- Botón para descargar -->
+    <a href="documentos/comandospython.pdf" target="_blank" class="boton">
+      📥 Descargar hoja de comandos de Python
+    </a>
+
+    <!-- Botón para navegar -->
+    <a href="programacion/" class="boton-navegar">
+      Ir a Programación
+    </a>
+
     <footer>
       <p>© 2026 Ivo Rolhaiser</p>
     </footer>
   </div>
 </body>
 </html>
+
