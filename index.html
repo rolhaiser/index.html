@@ -6,9 +6,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      background-color: #f4f4f9; /* color de fondo general */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #ffffff; /* recuadro blanco */
+      border: 3px solid #556B2F; /* borde con tu color */
+      border-radius: 10px;
+      padding: 40px;
       text-align: center;
-      margin: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     h1 {
       color: #2c3e50;
@@ -20,34 +30,36 @@
     a {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #3498db;
+      padding: 12px 25px;
+      background-color: rgb(85,107,47); /* tu color exacto */
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
     }
     a:hover {
-      background-color: #2980b9;
+      background-color: #6b8e23; /* tono más claro al pasar el mouse */
     }
     img {
       border-radius: 10px;
       margin-bottom: 20px;
     }
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 14px;
       color: #888;
     }
   </style>
 </head>
 <body>
-  <img src="imagenes/autor.png" alt="Foto de Ivo" width="300">
-  <h1>Hola, soy Ivo</h1>
-  <p>Bienvenido a mi página.</p>
-  <a href="documentos/comandospython.pdf" target="_blank">Descargar hoja de comandos de Python</a>
-  <footer>
-    <p>© 2026 Ivo Rolhaiser</p>
-  </footer>
+  <div class="container">
+    <img src="imagenes/autor.png" alt="Foto de Ivo" width="300">
+    <h1>Hola, soy Ivo</h1>
+    <p>Bienvenido a mi página.</p>
+    <a href="documentos/comandospython.pdf" target="_blank">Descargar hoja de comandos de Python</a>
+    <footer>
+      <p>© 2026 Ivo Rolhaiser</p>
+    </footer>
+  </div>
 </body>
 </html>
-
